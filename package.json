@@ -11,5 +11,13 @@
   },
   "engines": {
     "node": ">=0.8"
+  },
+  "devDependencies": {
+    "grunt-mocha": "~0.4.9",
+    "grunt-contrib-watch": "~0.5.3",
+    "time-grunt": "~0.2.8",
+    "grunt-exec": "~0.4.3",
+    "grunt-contrib-connect": "~0.6.0",
+    "matchdep": "~0.3.0"
   }
 }
