@@ -16,10 +16,10 @@ suite('User Model', function() {
     });
 
     test('should have a getFullName method()', function() {
-        expect(typeof this.user.getFullName).to.equal('function');
+        expect(this.user.getFullName).to.be.a('function');
     });
 
-    test('calling getFullName should return firstName[space]lastName', function() {
+    test('calling getFullName should return full name', function() {
         expect(this.user.getFullName()).to.equal('Jimmy Wilson');
     });
 
