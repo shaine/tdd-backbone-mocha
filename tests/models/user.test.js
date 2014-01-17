@@ -2,8 +2,8 @@ suite('User Model', function() {
 
     setup(function() {
         this.user = new app.models.User({
-            first_name: 'Jimmy',
-            last_name: 'Wilson'
+            firstName: 'Jimmy',
+            lastName: 'Wilson'
         });
     });
 
@@ -13,6 +13,14 @@ suite('User Model', function() {
 
     test('should exist', function() {
         expect(this.user).to.be.ok; // Tests this.user is truthy
+    });
+
+    test('should have a getFullName method()', function() {
+        expect(typeof this.user.getFullName).to.equal('function');
+    });
+
+    test('calling getFullName should return firstName[space]lastName', function() {
+        expect(this.user.getFullName()).to.equal('Jimmy Wilson');
     });
 
 });
