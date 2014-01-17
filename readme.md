@@ -1,5 +1,5 @@
 # Testing Backbone.js with mocha
 
-This is an example demo for a [blog post](http://phawk.co.uk/articles/testing-backbone-with-mocha) I have written.
+This is an example demo for a [blog post](http://phawk.co.uk/articles/testing-backbone-with-mocha) phawk has written.
 
-![Travis CI Build status](https://travis-ci.org/phawk/tdd-backbone-mocha.png?branch=master)
+I've forked it to experiment with.
