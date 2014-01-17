@@ -2,8 +2,8 @@ suite('User Model', function() {
 
     setup(function() {
         this.user = new app.models.User({
-            first_name: "Jimmy",
-            last_name: "Wilson"
+            first_name: 'Jimmy',
+            last_name: 'Wilson'
         });
     });
 
