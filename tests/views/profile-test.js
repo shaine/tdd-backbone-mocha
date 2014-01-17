@@ -2,8 +2,8 @@ suite('Profile View', function() {
 
     // Create a User model to pass into our view to give it data
     var model = new app.models.User({
-        first_name: 'John',
-        last_name: 'Black',
+        firstName: 'John',
+        lastName: 'Black',
         age: 35
     });
 
@@ -26,6 +26,15 @@ suite('Profile View', function() {
 
     test('should exist', function() {
         expect(this.profile).to.be.ok;
+    });
+
+    test('should render model', function() {
+        this.profile.render();
+
+        expect(this.profile.$el.html().match(/undefined/)).to.not.be.ok;
+        expect(this.profile.$el.html().match(/John/)).to.be.ok;
+        expect(this.profile.$el.html().match(/Black/)).to.be.ok;
+        expect(this.profile.$el.html().match(/35/)).to.be.ok;
     });
 
 });
